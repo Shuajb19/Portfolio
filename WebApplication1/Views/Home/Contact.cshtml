@@ -1,0 +1,112 @@
+﻿@model WebApplication1.Models.Contact
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+
+
+        <nav>
+            <div class="navbar container">
+                <a class="" asp-controller="Home" asp-action="Index"><h1>Shuajb Ahmeti</h1></a>
+                <div class="navbars">
+                    <ul class="navbar-links">
+                        <li class="nav-item">
+                            <a class="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="">
+                            <a class="active" asp-controller="Home" asp-action="Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h4>Contact</h4>
+    <hr />
+
+    <div class="about-us">
+        <div class="about-us__form">
+            <form class='about-us__form-inner' asp-action="Contact">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Emri" class="control-label">Emri</label>
+                    <input asp-for="Emri" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Mbiemri" class="control-label">Mbiemri</label>
+                    <input asp-for="Mbiemri" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">Email</label>
+                    <input asp-for="Email" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subjekti" class="control-label">Subjekti</label>
+                    <input asp-for="Subjekti" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label asp-for="Mesazhi" class="control-label">Mesazhi</label>
+                    <textarea rows='4' asp-for="Mesazhi" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="form-control__submit" />
+                </div>
+            </form>
+        </div>
+        <div class='about-us__image'>
+            <img src="~/Assets/Images/write-us.png" alt="">
+        </div>
+    </div>
+    @*<div class="row">
+        <div class="col-md-4">
+            <form asp-action="Contact">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Emri" class="control-label"></label>
+                    <input asp-for="Emri" class="form-control" />
+                    <span asp-validation-for="Emri" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Mbiemri" class="control-label"></label>
+                    <input asp-for="Mbiemri" class="form-control" />
+                    <span asp-validation-for="Mbiemri" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subjekti" class="control-label"></label>
+                    <input asp-for="Subjekti" class="form-control" />
+                    <span asp-validation-for="Subjekti" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Mesazhi" class="control-label"></label>
+                    <input asp-for="Mesazhi" class="form-control" />
+                    <span asp-validation-for="Mesazhi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>*@
+
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+</html>

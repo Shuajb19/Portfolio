@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Assets\Images\Medreseja_Alauddin_Prishtinë.jpg" />
+    <None Include="wwwroot\Assets\Images\Riinvest-foto.png" />
+    <None Include="wwwroot\Assets\Images\shkolla-emin-duraku.jpg" />
+    <None Include="wwwroot\Assets\Images\shuajb.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.0.1" />
+    <PackageReference Include="Microsoft.IdentityModel.Protocols" Version="6.15.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+  </ItemGroup>
+
+</Project>

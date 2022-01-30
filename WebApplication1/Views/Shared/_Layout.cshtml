@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        @Html.Partial("~/Views/Components/Navbar.cshtml")
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="main-footer container">
+            <div class="contact-me">
+                <h1>Let's talk about your idea</h1>
+                <a class="" asp-controller="Home" asp-action="Contact">Contact me</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <h1>Shuajb Ahmeti</h1>
+            <p>&copy; 2022 - Shuajb Ahmeti</p>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,562 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background: #485563;
+    background: -webkit-linear-gradient(to right, #29323c, #485563);
+    background: linear-gradient(to right, #29323c, #485563);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    font-family: system-ui;
+}
+
+html {
+    scroll-behavior: smooth;
+    
+}
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+    
+}
+
+.about-us__form {
+    width: 100%;
+}
+
+.about-us__form-inner {
+    max-width: 350px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+.form-control {
+    width: 300px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #6c757d;
+    font-size: 18px;
+    padding: 8px;
+    transition: all 0.4s;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+    .form-control:focus {
+        outline: none;
+        border: 1px solid #fff;
+    }
+
+.control-label {
+    margin-bottom: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.form-control__submit {
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    color: #343a40;
+    border-color: #6c757d;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: all 0.3s;
+    color: white;
+    width: 100%;
+}
+
+    .form-control__submit:hover {
+        border-color: white;
+    }
+
+.about-us__image {
+    width: 100%;
+    margin-left: 15px;
+}
+
+    .about-us__image img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        object-position: center;
+    }
+
+@media only screen and (max-width: 600px) {
+    .about-us__image {
+        display: none;
+    }
+}
+
+
+.container {
+    /*margin-right: 400px;
+    margin-left: 400px;*/
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #24252A;
+    height: 10vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.navbar h1{
+    color: white;
+}
+
+.navbar-links{
+    
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+ul li {
+    font-size: 20px;
+    margin-left: 30px;
+    color: white;
+}
+
+ul li a {
+    color: white;
+}
+
+
+
+.active {
+    background-color: rgba(0,136,169,1);
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px 20px;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+.first-section {
+    /*height: 100vh;*/
+}
+
+.inner-first-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+
+.about-me {
+    font-size: 20px;
+    color: #707487;
+    letter-spacing: 0.3px;
+    line-height: 34px;
+    max-width: 450px;
+    font-weight: 400;
+}
+
+.about-me h1{
+    color: whitesmoke;
+}
+
+.about-me p{
+    margin-top: 20px;
+}
+
+.my-image {
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 4px 4px 20px 0px rgba(41,50,60,1);
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(41,50,60,1);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(41,50,60,1);
+}
+
+.second-section {
+    /*height: 100vh;*/
+}
+
+.inner-second-section {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    padding-top: 100px;
+}
+
+.about-schooling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    color: #707487;
+    letter-spacing: 0.3px;
+    line-height: 34px;
+    max-width: 450px;
+    font-weight: 400;
+}
+
+.about-schooling h1 {
+    color: whitesmoke;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1, .card2, .card3 {
+    background-color: rgba(18, 40, 26, 0.07);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 350px;
+    height: 450px;
+    box-shadow: 4px 4px 20px 0px rgba(41,50,60,0.68);
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(41,50,60,0.68);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(41,50,60,0.68);
+}
+
+.card-image {
+    border-radius: 10px;
+    height: 200px;
+}
+
+.card-description {
+    padding: 8px;
+    font-size: 24px;
+    text-align: center;
+    height: 250px;
+    color: #d2d2d4;
+}
+
+.card-description h3 {
+    color: #bebfc2;
+    margin-bottom: 25px;
+}
+
+
+
+.third-section {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    height: 100vh;
+}
+
+.inner-third-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.about-my-skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    font-size: 20px;
+    color: #707487;
+    letter-spacing: 0.3px;
+    line-height: 34px;
+    font-weight: 400;
+    max-width: 450px;
+}
+
+.about-my-skills h1{
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.all-skills {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 200px;
+    
+}
+
+.all-skills-other {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+    .all-skills img, .all-skills-other img {
+        
+        object-fit: cover;
+    }
+
+.all-skills div, .all-skills-other div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.all-skills div, .all-skills-other div {
+    padding: 15px 25px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 20px 0px rgba(41,50,60,0.68);
+    -webkit-box-shadow: 4px 4px 20px 0px rgba(41,50,60,0.68);
+    -moz-box-shadow: 4px 4px 20px 0px rgba(41,50,60,0.68);
+}
+
+.all-skills div h4, .all-skills-other h4 {
+    color: whitesmoke;
+    padding-bottom: 8px;
+}
+
+.inner-fourth-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+
+.my-projects-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    color: #707487;
+    letter-spacing: 0.3px;
+    line-height: 34px;
+    font-weight: 400;
+    /*max-width: 450px;*/
+}
+
+.my-projects-description h1 {
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.first-project, .first-project-other-photos {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+    .first-project div, .first-project-other-photos div {
+        background: #485563;
+        background: -webkit-linear-gradient(to right, #29323c, #485563);
+        background: linear-gradient(to right, #29323c, #485563);
+        border-radius: 12px;
+        padding: 15px 30px;
+        
+    }
+
+
+
+.second-image, .fourth-image {
+    margin-left: 30px;
+}
+
+    .first-project img, .first-project-other-photos img {
+        object-fit: contain;
+    }
+
+    .first-project-other-photos{
+        margin-top: 30px;
+    }
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #485563;
+    margin-top: 100px;
+    height: 250px;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
+    color: #707487;
+    
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: whitesmoke;
+    color: black;
+    width: 240px;
+    height: 50px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.main-footer h1, .copyright h1 {
+    color: whitesmoke;
+}
+
+
+
+/*Sorry, i did not have time to finish all responive*/
+@media only screen and (max-width: 1260px) {
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-right: 20px;
+    }
+
+    .first-project, .first-project-other-photos {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+
+    .first-image, .second-image, third-image, .fourth-image{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+    
+}
+
+@media only screen and (max-width: 1076px) {
+
+    .card3 {
+        margin-top: 30px;
+    }
+
+    .inner-second-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner-first-section{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+@media only screen and (max-width: 716px) {
+    .card2 {
+        margin-top: 30px;
+    }
+    .inner-second-section {
+        display: flex;
+        flex-direction: column;
+        
+        /*justify-content: space-between;*/
+        padding-top: 100px;
+    }
+    .all-skills, .all-skills-other {
+        background-color: red;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .all-skills div {
+        margin-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 716px) {
+    .image-section img{
+        margin-top: 30px;
+        width: 320px;
+        height: 320px;
+    }
+}
+
+
+
